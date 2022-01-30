@@ -1,2 +1,1 @@
-# Carlos-Gonz-lez
-Config files for my GitHub profile.
+Hi i am Carlos Gonzalez 
