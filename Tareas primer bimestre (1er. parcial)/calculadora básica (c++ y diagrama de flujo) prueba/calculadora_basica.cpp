@@ -8,6 +8,7 @@ int main()
     string math=" ";
     cout << endl;
     cout << "        ==== CALCULADORA BASICA ====" << endl;
+    cout << "  created by Carlos Gonzalez, 9959-20-6164" << endl;
     cout << endl <<"Introduce el primer numero: " << endl;
     cin >> numero1;
     cout << endl << "Introduce el segundo numero: " << endl;
