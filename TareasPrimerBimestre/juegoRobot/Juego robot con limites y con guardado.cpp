@@ -34,7 +34,7 @@ void DrawMap(int HeroPosX, int HeroPosY, char GameMap[11][18])
 
                 if ( i != HeroPosX || j != HeroPosY )
                 {
-                    GameMap[i][j] = '*';
+                    GameMap[i][j] = ' ';
                 }
 
             }
@@ -114,6 +114,7 @@ int main()
     {'=','=','=','=','=','=','=','=','=','=','=','=','=','=','=','=','=','='}};
     int HeroPosX=8;
     int HeroPosY=11;
+    int a=0,s=0,d=0,w=0;
     bool isGameOver = false;
     char Input = ' ';
     string NamePlayer =" ";
@@ -137,21 +138,26 @@ int main()
             case 'd':
                 if(HeroPosY < 16)
                     HeroPosY++;
+                    d++;
                 break;
             case 'a':
                 if(HeroPosY > 1)
                     HeroPosY--;
+                    a++;
                 break;
             case 'w':
                 if(HeroPosX > 1)
                     HeroPosX--;
+                    w++;
                 break;
             case 's':
                 if(HeroPosX < 9)
                     HeroPosX++;
+                    s++;
                 break;
             case 'q':
                 isGameOver = true;
+                cout << "El jugador ha realizado " << a+s+d+w << " iteraciones durante la partida" << endl;
                 break;
             case 'e':
                 SaveFile(NamePlayer, GameMap);
